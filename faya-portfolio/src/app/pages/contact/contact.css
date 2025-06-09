@@ -1,0 +1,21 @@
+.contact-container {
+  padding: 2rem;
+}
+
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-container li {
+  margin-bottom: 1rem;
+}
+
+.contact-container a {
+  color: #0055cc;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
