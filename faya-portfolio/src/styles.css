@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #111;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .projects-container,
+  .skills-container,
+  .contact-container,
+  .home-container,
+  .about-container {
+    padding: 1rem;
+  }
+}
