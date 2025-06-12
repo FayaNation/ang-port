@@ -1,12 +1,13 @@
 <section class="projects-container">
   <h2>Projects I've Built</h2>
-  <div class="project">
-    <h3>Doctor Booking App</h3>
-    <p>A mobile app that lets users search, view and book doctors using Firebase and Maps.</p>
+
+  <div *ngIf="projects.length === 0">
+    <p>Loading projects...</p>
   </div>
-  <div class="project">
-    <h3>Livestock Tracker</h3>
-    <p>Designed a real-time livestock tracking system using GPS data and IoT collars.</p>
+
+  <div *ngFor="let project of projects" class="project">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+    <a [href]="project.url" target="_blank">View on GitHub</a>
   </div>
 </section>
-
